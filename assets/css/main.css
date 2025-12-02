@@ -3073,3 +3073,19 @@ section,
     font-size:90px;
     margin-left:15px;
 }
+
+/* smile end */
+
+/* custom.css에 넣기만 하면 됨 */
+
+.spinner-border {
+    --bs-spinner-border-width: 0.4em;   /* 두께 (기본 0.25em) */
+    color: #e74c3c;                     /* 회전하는 부분 색상 */
+    border-color: rgba(231, 76, 60, 0.2); /* 연한 배경 원 색상 */
+    animation-duration: 0.75s;          /* 속도 조절 (기본 0.75s) */
+}
+
+.spinner-grow {
+    background-color: #9b59b6;          /* grow 색상 */
+    animation-duration: 1s;
+}
