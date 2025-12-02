@@ -1563,7 +1563,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-    background: var(--surface-color);
+    background: var(--background-color);
     padding: 30px;
     border-radius: 10px;
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -2352,7 +2352,7 @@ section,
 }
 
 .resume .experience-section .experience-cards .exp-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
     box-shadow: 0 15px 45px color-mix(in srgb, var(--default-color), transparent 85%);
 }
