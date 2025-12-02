@@ -3002,10 +3002,10 @@ section,
     }
 
     .hero-section .h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .h1.accent {
-        font-size: 3.25rem;
+        font-size: 2.75rem;
     }
     .about-title{
         font-size: 4rem;
@@ -3014,4 +3014,5 @@ section,
         font-size: 2.125rem;
     }
 }
+
 
