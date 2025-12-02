@@ -229,7 +229,21 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
-
-
-
+    /**
+     * include
+     */
+    document.addEventListener("DOMContentLoaded", function() {
+        // header, footer, nav 등을 한 번에 불러오기
+        const includes = document.querySelectorAll('[data-include]');
+        includes.forEach(el => {
+            const file = el.getAttribute('data-include');
+            fetch(file)
+                .then(res => res.text())
+                .then(data => el.outerHTML = data)
+                .catch(() => console.error(`Include 실패: ${file}`));
+        });
+    });
+    /**
+     * include
+     */
 })();
