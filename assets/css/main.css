@@ -2345,14 +2345,14 @@ section,
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 1px;
     background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
     transform: translateX(-100%);
     transition: transform 0.3s ease;
 }
 
 .resume .experience-section .experience-cards .exp-card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
     box-shadow: 0 15px 45px color-mix(in srgb, var(--default-color), transparent 85%);
 }
@@ -2990,6 +2990,9 @@ section,
     .about-title{
 
         font-size: 5rem;
+    }
+    .sub-about{
+        padding: 60px 0;
     }
     .sub-about p{
         font-size: 3rem;
