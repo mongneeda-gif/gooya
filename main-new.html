@@ -63,7 +63,16 @@
     <section id="get-started" class="hero-section home-hero-section">
         <div class="w-layout-blockcontainer site-container w-container">
             <div class="hero-centered-block">
-                <div class="about-title">Hello</div>
+                <div class="about-title">
+                    <div id="text-drop">
+                        <div class="h">H</div>
+                        <div class="e">e</div>
+                        <div class="l">l</div>
+                        <div class="l2">l</div>
+                        <div class="o">o</div>
+                        <div class="smile">:)</div>
+                    </div>
+                </div>
                 <img src="assets/img/profile/me-back.jpg" alt=""
                     loading="lazy" sizes="(max-width: 767px) 100vw, 675.0000610351562px" class="hero-image">
                 <div data-w-id="91a14c1c-6ecb-b6fe-e71a-1b3a5dcaea2f"
@@ -1279,6 +1288,23 @@
     });
 
         targets.forEach(t => observer.observe(t));
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const textDrop = document.querySelector('#text-drop');
+
+            // 마우스가 요소를 떠날 때 'clicked' 클래스 제거
+            textDrop.addEventListener('mouseleave', function() {
+                this.classList.remove('clicked');
+            });
+
+            // 클릭했을 때 'clicked' 클래스 추가 + 내용 다시 설정 (jQuery의 .html()과 동일한 효과)
+            textDrop.addEventListener('click', function() {
+                this.classList.add('clicked');
+                // 현재 HTML 내용을 다시 설정 → jQuery의 .html($(this).html())과 같은 역할
+                // (실제로 내용이 바뀌는 건 아니지만, 동일한 동작 보장)
+                this.innerHTML = this.innerHTML;
+            });
+        });
 </script>
 
 </body>
