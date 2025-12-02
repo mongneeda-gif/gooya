@@ -2847,14 +2847,6 @@ section,
     padding-top: calc(100svh - 50em);
     padding-bottom: 14.625em;
 }
-
-.hero-section.coaching-hero-section {
-    flex-flow: column;
-    justify-content: center;
-    min-height: 100svh;
-    padding-top: 10em;
-    display: flex;
-}
 .hero-image {
     z-index: 30;
     height: 39.375em;
@@ -2914,7 +2906,6 @@ section,
     padding: 100px 0;
     background: var(--surface-color);
 }
-
 .sub-about p{
     font-size: 7.5rem;
     line-height:0.725;
@@ -2950,8 +2941,16 @@ section,
     }
 }
 @media (max-width: 1200px) {
+    .hero-section.home-hero-section {
+        padding-top: calc(40svh);
+        padding-bottom: 14.625em;
+    }
     .hero-section .h1 {
         font-size: 6rem;
+    }
+    .hero-image {
+        width: 80%;
+        height: auto;
     }
     .about-title{
         top:150px;
@@ -2980,7 +2979,6 @@ section,
         min-height: 50dvh;
     }
     .hero-section.home-hero-section {
-        padding-top: calc(100svh - 70em);
         padding-bottom: 10em;
     }
     .hero-section .h1 {
@@ -3000,13 +2998,9 @@ section,
 }
 @media (max-width: 576px) {
     .hero-section.home-hero-section {
-        padding-top: calc(100svh - 40em);
-        padding-bottom: 10em;
+            padding-bottom: 5em;
     }
-    .hero-image {
-        width: 90%;
-        height: auto;
-    }
+
     .hero-section .h1 {
         font-size: 3em;
     }
