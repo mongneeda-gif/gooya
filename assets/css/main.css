@@ -483,8 +483,8 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-    color: var(--default-color);
-    background-color: var(--surface-color);
+    color: var(--background-color);
+    background-color: var(--th-black);
     font-size: 14px;
     padding: 20px 0 50px 0;
     position: relative;
@@ -587,7 +587,7 @@ h6 {
 .footer .copyright {
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: var(--surface-color);
+
 }
 
 .footer .copyright p {
@@ -597,6 +597,9 @@ h6 {
 .footer .credits {
     margin-top: 6px;
     font-size: 13px;
+}
+.footer .credits a{
+    color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -2908,13 +2911,18 @@ section,
     position: absolute;
 }
 .sub-about{
-    padding: 200px 0;
+    padding: 100px 0;
+    background: var(--surface-color);
 }
+
 .sub-about p{
     font-size: 7.5rem;
     line-height:0.725;
     font-weight: 900;
     letter-spacing: -0.1rem;
+}
+#contact{
+    background: var(--surface-color);
 }
 .line {
     color: #a9a9a9;
