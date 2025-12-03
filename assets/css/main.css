@@ -2415,7 +2415,7 @@ section,
     background: var(--surface-color);
     border-radius: 16px;
     padding: 2rem;
-    border: 2px solid color-mix(in srgb, var(--default-color), transparent 95%);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 95%);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;

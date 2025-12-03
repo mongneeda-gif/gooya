@@ -2415,7 +2415,7 @@ section,
     background: var(--surface-color);
     border-radius: 16px;
     padding: 2rem;
-    border: 2px solid color-mix(in srgb, var(--default-color), transparent 95%);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 95%);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -2434,7 +2434,7 @@ section,
 }
 
 .resume .experience-section .experience-cards .exp-card:hover {
-    transform: translateY(-1px);
+    transform: translateY(0px);
     border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
     box-shadow: 0 15px 45px color-mix(in srgb, var(--default-color), transparent 85%);
 }
