@@ -1265,7 +1265,18 @@
 
 <!-- Preloader -->
 
-<div id="preloader"><div class="stars-loader"></div></div>
+<!-- Preloader -->
+<div id="preloader" class="loading">
+    <div class="loading-text">
+        <span class="loading-text-words">L</span>
+        <span class="loading-text-words">O</span>
+        <span class="loading-text-words">A</span>
+        <span class="loading-text-words">D</span>
+        <span class="loading-text-words">I</span>
+        <span class="loading-text-words">N</span>
+        <span class="loading-text-words">G</span>
+    </div>
+</div>
 
 <!-- Vendor JS Files -->
 <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1282,9 +1293,8 @@
 <script src="assets/js/main.js"></script>
 
 <script>
-
+    /* text animation */
     const targets = document.querySelectorAll('.change');
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -1303,7 +1313,7 @@
     });
 
     targets.forEach(t => observer.observe(t));
-
+    /* hello 글자 ani */
     document.addEventListener('DOMContentLoaded', function () {
         const textDrop = document.querySelector('#text-drop');
 
